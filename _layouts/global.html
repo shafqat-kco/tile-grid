@@ -1,0 +1,25 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{page.hTitle}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tile-grid.css">
+</head>
+<body>
+{% include header.html %}
+<main>
+    <div class="container">
+        {% include tile-grid.html %}
+        {{page.content}}
+    </div>
+</main>
+{% include footer.html %}
+</body>
+</html>

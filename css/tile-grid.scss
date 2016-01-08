@@ -1,0 +1,25 @@
+---
+---
+@import "structure";
+@import "styling";
+
+body {
+  background-color: #ffffff;
+}
+@media (max-width: 640px) {
+  main {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  body {
+    main, header, footer {
+      min-width: 1200px !important;
+      width: 100% !important;
+    }
+    main {
+      min-height: 0px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{% assign columnSize = 12 | divided_by: site.data.config.itemsPerRow %}
+<div class="row">
+    {% for item in page.updates%}
+    <div class="col-sm-{{columnSize}} update-block">
+        <a href="#/">
+            <img src="imgs/{{ item.image }}" alt="image {{forloop.index}}"/>
+
+            <div class="txt-wrap {{item.class}}">
+                <small>{{ item.tag }}</small>
+
+                <b>{{ item.title }}</b>
+
+                {% if item.intro | size > 0 %}
+                <p>{{ item.intro }}</p>
+                {% endif %}
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

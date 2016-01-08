@@ -1,0 +1,45 @@
+.update-block {
+  padding: 0;
+  overflow: hidden;
+  a {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .txt-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      small {
+        display: block;
+      }
+      b {
+        display: inline-block;
+      }
+      &.align-left {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .update-block {
+    max-width: 380px;
+    a {
+      img {
+        min-height: 215px;
+        max-height: 215px;
+        max-width: 100%;
+      }
+      .txt-wrap {
+        b {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

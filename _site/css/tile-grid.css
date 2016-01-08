@@ -1,0 +1,93 @@
+.update-block {
+  padding: 0;
+  overflow: hidden; }
+  .update-block a {
+    display: block; }
+    .update-block a img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .update-block a .txt-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+      .update-block a .txt-wrap small {
+        display: block; }
+      .update-block a .txt-wrap b {
+        display: inline-block; }
+      .update-block a .txt-wrap.align-left {
+        max-width: 50%; }
+
+@media (max-width: 640px) {
+  .update-block {
+    max-width: 380px; }
+    .update-block a img {
+      min-height: 215px;
+      max-height: 215px;
+      max-width: 100%; }
+    .update-block a .txt-wrap b {
+      max-width: 100%; } }
+.update-block a .txt-wrap {
+  padding: 20px 20px; }
+  .update-block a .txt-wrap small {
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .update-block a .txt-wrap b {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px; }
+  .update-block a .txt-wrap p {
+    font-weight: 400;
+    line-height: 22px; }
+  .update-block a .txt-wrap.txt-white {
+    color: #fff; }
+  .update-block a .txt-wrap.txt-black {
+    color: #363636; }
+.update-block a:after {
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  content: '';
+  opacity: 0; }
+.update-block a:hover, .update-block a:focus, .update-block a:active {
+  text-decoration: none; }
+  .update-block a:hover .txt-wrap small, .update-block a:hover .txt-wrap b, .update-block a:hover .txt-wrap p, .update-block a:focus .txt-wrap small, .update-block a:focus .txt-wrap b, .update-block a:focus .txt-wrap p, .update-block a:active .txt-wrap small, .update-block a:active .txt-wrap b, .update-block a:active .txt-wrap p {
+    text-decoration: none; }
+  .update-block a:hover:after, .update-block a:focus:after, .update-block a:active:after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.15); }
+
+@media (max-width: 640px) {
+  .update-block {
+    padding: 0;
+    margin: 0 auto 15px; }
+    .update-block a .txt-wrap {
+      padding: 20px 17px; }
+      .update-block a .txt-wrap small {
+        margin-bottom: 0; }
+      .update-block a .txt-wrap b {
+        font-size: 22px;
+        margin-bottom: 15px; }
+      .update-block a .txt-wrap p {
+        line-height: 20px; } }
+body {
+  background-color: #ffffff; }
+
+@media (max-width: 640px) {
+  main {
+    padding: 0 15px; } }
+@media (min-width: 641px) and (max-width: 1199px) {
+  body main, body header, body footer {
+    min-width: 1200px !important;
+    width: 100% !important; }
+  body main {
+    min-height: 0px; } }
